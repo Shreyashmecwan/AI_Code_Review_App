@@ -1,0 +1,272 @@
+/* =====================================
+            1400px
+===================================== */
+
+@media(max-width:1400px){
+
+    .container{
+
+        width:96%;
+
+    }
+
+}
+
+
+/* =====================================
+            1200px
+===================================== */
+
+@media(max-width:1200px){
+
+    .editor-wrapper{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .upload-card{
+
+        min-height:350px;
+
+    }
+
+}
+
+
+/* =====================================
+            992px
+===================================== */
+
+@media(max-width:992px){
+
+    .navbar{
+
+        padding:20px;
+
+        flex-wrap:wrap;
+
+        height:auto;
+
+        gap:20px;
+
+    }
+
+    .nav-right{
+
+        width:100%;
+
+        justify-content:flex-end;
+
+    }
+
+    .hero h1{
+
+        font-size:40px;
+
+    }
+
+    .config-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .config-card.large{
+
+        grid-column:span 1;
+
+    }
+
+}
+
+
+/* =====================================
+            768px
+===================================== */
+
+@media(max-width:768px){
+
+    .hero{
+
+        padding:40px 0;
+
+    }
+
+    .hero h1{
+
+        font-size:34px;
+
+    }
+
+    .hero p{
+
+        font-size:16px;
+
+    }
+
+    .tabs{
+
+        flex-direction:column;
+
+    }
+
+    .tab{
+
+        width:100%;
+
+    }
+
+    .logo h2{
+
+        font-size:22px;
+
+    }
+
+    .logo p{
+
+        font-size:13px;
+
+    }
+
+    .editor-top{
+
+        flex-direction:column;
+
+        gap:15px;
+
+        align-items:flex-start;
+
+    }
+
+    .editor-top select{
+
+        width:100%;
+
+    }
+
+    .checkbox-group{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .radio-group{
+
+        gap:12px;
+
+    }
+
+}
+
+
+/* =====================================
+            576px
+===================================== */
+
+@media(max-width:576px){
+
+    .container{
+
+        width:94%;
+
+    }
+
+    .review-panel{
+
+        padding:20px;
+
+    }
+
+    .hero h1{
+
+        font-size:28px;
+
+    }
+
+    .upload-card{
+
+        padding:25px;
+
+    }
+
+    .upload-icon{
+
+        width:70px;
+
+        height:70px;
+
+    }
+
+    .upload-icon i{
+
+        font-size:34px;
+
+    }
+
+    .chips{
+
+        justify-content:center;
+
+    }
+
+    .review-btn{
+
+        font-size:16px;
+
+    }
+
+    footer{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+}
+
+
+/* =====================================
+            400px
+===================================== */
+
+@media(max-width:400px){
+
+    .hero h1{
+
+        font-size:24px;
+
+    }
+
+    .logo{
+
+        gap:12px;
+
+    }
+
+    .logo-icon{
+
+        width:42px;
+
+        height:42px;
+
+        font-size:18px;
+
+    }
+
+    .status{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+    .nav-right{
+
+        flex-direction:column;
+
+    }
+
+}

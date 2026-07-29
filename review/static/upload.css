@@ -1,0 +1,169 @@
+/* =====================================
+            UPLOAD AREA
+===================================== */
+
+.upload-card{
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    background:var(--card);
+
+    border:2px dashed #334155;
+
+    border-radius:20px;
+
+    padding:40px 30px;
+
+    min-height:520px;
+
+    transition:.3s ease;
+
+}
+
+.upload-card:hover{
+
+    border-color:var(--primary);
+
+    background:#152038;
+
+}
+
+
+/* =====================================
+            ICON
+===================================== */
+
+.upload-icon{
+
+    width:90px;
+    height:90px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+
+    background:rgba(79,124,255,.12);
+
+    margin-bottom:25px;
+
+}
+
+.upload-icon i{
+
+    font-size:42px;
+
+    color:var(--primary);
+
+}
+
+
+/* =====================================
+            TEXT
+===================================== */
+
+.upload-card h3{
+
+    font-size:24px;
+
+    margin-bottom:10px;
+
+}
+
+.upload-card p{
+
+    color:var(--text-muted);
+
+    margin-bottom:25px;
+
+}
+
+.upload-card h4{
+
+    margin-top:35px;
+
+    margin-bottom:18px;
+
+    color:var(--text-light);
+
+}
+
+
+/* =====================================
+            BUTTON
+===================================== */
+
+.upload-btn{
+
+    padding:14px 34px;
+
+    background:var(--gradient);
+
+    color:white;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+.upload-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 28px rgba(79,124,255,.35);
+
+}
+
+
+/* =====================================
+        FILE CHIPS
+===================================== */
+
+.chips{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:10px;
+
+}
+
+.chips span{
+
+    padding:9px 18px;
+
+    border-radius:30px;
+
+    background:#1A2438;
+
+    border:1px solid var(--border);
+
+    color:var(--text-light);
+
+    font-size:14px;
+
+    transition:.25s;
+
+}
+
+.chips span:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+    cursor:pointer;
+
+}

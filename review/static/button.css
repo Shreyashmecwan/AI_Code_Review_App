@@ -1,0 +1,184 @@
+/* =====================================
+            BUTTON RESET
+===================================== */
+
+button{
+
+    border:none;
+    outline:none;
+
+    cursor:pointer;
+
+    font-family:inherit;
+
+    transition:var(--transition);
+
+}
+
+
+/* =====================================
+            ICON BUTTON
+===================================== */
+
+.icon-btn{
+
+    width:46px;
+    height:46px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:12px;
+
+    background:transparent;
+
+    border:1px solid var(--border);
+
+    color:var(--text);
+
+    font-size:20px;
+
+}
+
+.icon-btn:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+    border-color:var(--primary);
+
+}
+
+
+/* =====================================
+            TAB BUTTON
+===================================== */
+
+.tab{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    padding:14px 24px;
+
+    background:#182235;
+
+    border:1px solid var(--border);
+
+    border-radius:14px;
+
+    color:var(--text-light);
+
+    font-size:15px;
+
+    font-weight:500;
+
+}
+
+.tab:hover{
+
+    background:#202D44;
+
+}
+
+.tab.active{
+
+    background:var(--gradient);
+
+    color:white;
+
+    border:none;
+
+}
+
+
+/* =====================================
+        UPLOAD BUTTON
+===================================== */
+
+.upload-btn{
+
+    padding:14px 30px;
+
+    border-radius:12px;
+
+    background:var(--gradient);
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+.upload-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 12px 28px rgba(79,124,255,.35);
+
+}
+
+
+/* =====================================
+        REVIEW BUTTON
+===================================== */
+
+.review-btn{
+
+    width:100%;
+
+    padding:18px;
+
+    margin-top:40px;
+
+    border-radius:16px;
+
+    background:var(--gradient);
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+
+}
+
+.review-btn:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 16px 40px rgba(79,124,255,.35);
+
+}
+
+.review-btn:active{
+
+    transform:scale(.98);
+
+}
+
+
+/* =====================================
+        DISABLED
+===================================== */
+
+button:disabled{
+
+    opacity:.6;
+
+    cursor:not-allowed;
+
+    transform:none;
+
+}

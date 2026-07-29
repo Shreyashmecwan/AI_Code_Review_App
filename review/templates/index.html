@@ -1,20 +1,409 @@
+load static
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        <h1>Hello world!</h1>
-        
-        <script src="" async defer></script>
-    </body>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Code Review Assistant</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/base.css">
+    <link rel="stylesheet" href="static/variables.css">
+    <link rel="stylesheet" href="static/navbar.css">
+    <link rel="stylesheet" href="static/hero.css">
+    <link rel="stylesheet" href="static/editor.css">
+    <link rel="stylesheet" href="static/upload.css">
+    <link rel="stylesheet" href="static/button.css">
+    <link rel="stylesheet" href="static/responsive.css">
+    <link rel="stylesheet" href="static/footer.css">
+    <link rel="stylesheet" href="static/review.css">
+
+
+</head>
+
+<body>
+
+    <!-- ==========================
+            NAVBAR
+    =========================== -->
+
+    <header class="navbar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                <i class="ri-code-s-slash-line"></i>
+            </div>
+
+            <div>
+
+                <h2>AI Code Review Assistant</h2>
+
+                <p>
+                    Offline
+                    <span class="dot"></span>
+                    Local
+                    <span class="dot"></span>
+                    Secure
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="nav-right">
+
+            <div class="status">
+
+                <span class="status-dot"></span>
+
+                Ollama Connected
+
+            </div>
+
+            <button class="icon-btn">
+                <i class="ri-moon-line"></i>
+            </button>
+
+            <button class="icon-btn">
+                <i class="ri-information-line"></i>
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- ==========================
+            MAIN
+    =========================== -->
+
+    <main class="container">
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <h1>Upload Code or Paste Your Code</h1>
+
+            <p>
+                Get AI-powered code review with detailed suggestions and improvements
+            </p>
+
+        </section>
+
+        <!-- ==========================
+                INPUT PANEL
+        =========================== -->
+
+        <section class="review-panel">
+
+            <!-- Tabs -->
+
+            <div class="tabs">
+
+                <button class="tab active">
+
+                    <i class="ri-code-box-line"></i>
+
+                    Paste Code
+
+                </button>
+
+                <button class="tab">
+
+                    <i class="ri-upload-line"></i>
+
+                    Upload File
+
+                </button>
+
+            </div>
+
+            <!-- ==========================
+                    EDITOR + UPLOAD
+            =========================== -->
+
+            <div class="editor-wrapper">
+
+                <!-- LEFT -->
+
+                <div class="editor-card">
+
+                    <div class="editor-top">
+
+                        <select>
+
+                            <option>Python</option>
+                            <option>Java</option>
+                            <option>JavaScript</option>
+                            <option>TypeScript</option>
+                            <option>C</option>
+                            <option>C++</option>
+
+                        </select>
+
+                    </div>
+
+<pre class="code-editor"><code>
+1  import hashlib
+2  import sqlite3
+
+4  def authenticate(username, password):
+
+5      conn = sqlite3.connect("users.db")
+
+6      cursor = conn.cursor()
+
+8      cursor.execute(
+9          "SELECT * FROM users WHERE username=?",
+10         (username,)
+11     )
+
+12     user = cursor.fetchone()
+
+14     if user:
+
+15         if hashlib.sha1(
+16             password.encode()
+17         ).hexdigest() == user[2]:
+
+18             return True
+
+20     return False
+</code></pre>
+
+                </div>
+
+                <!-- RIGHT -->
+
+                <div class="upload-card">
+
+                    <div class="upload-icon">
+
+                        <i class="ri-upload-cloud-2-line"></i>
+
+                    </div>
+
+                    <h3>Drag & Drop Your File</h3>
+
+                    <p>or</p>
+
+                    <button class="upload-btn">
+
+                        Choose File
+
+                    </button>
+
+                    <h4>Supported Formats</h4>
+
+                    <div class="chips">
+
+                        <span>.py</span>
+                        <span>.java</span>
+                        <span>.js</span>
+                        <span>.ts</span>
+                        <span>.c</span>
+                        <span>.cpp</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ==========================
+                REVIEW CONFIGURATION
+            =========================== -->
+
+            <h2 class="section-title">
+
+                Review Configuration
+
+            </h2>
+
+            <div class="config-grid">
+
+                <!-- Language -->
+
+                <div class="config-card">
+
+                    <label>
+
+                        Programming Language
+
+                    </label>
+
+                    <select>
+
+                        <option>Auto Detect</option>
+
+                    </select>
+
+                </div>
+
+                <!-- Review Type -->
+
+                <div class="config-card">
+
+                    <label>
+
+                        Review Type
+
+                    </label>
+
+                    <select>
+
+                        <option>Security Review</option>
+
+                    </select>
+
+                </div>
+
+                <!-- Focus -->
+
+                <div class="config-card">
+
+                    <label>
+
+                        Focus Areas
+
+                    </label>
+
+                    <div class="checkbox-group">
+
+                        <label><input type="checkbox" checked> Security</label>
+
+                        <label><input type="checkbox"> Performance</label>
+
+                        <label><input type="checkbox"> Maintainability</label>
+
+                        <label><input type="checkbox"> Readability</label>
+
+                        <label><input type="checkbox"> Best Practices</label>
+
+                        <label><input type="checkbox"> Bug Detection</label>
+
+                    </div>
+
+                </div>
+
+                <!-- Context -->
+
+                <div class="config-card large">
+
+                    <label>
+
+                        Project Context
+
+                    </label>
+
+                    <textarea rows="6">
+This code belongs to an authentication system for an online banking application.
+
+Please focus on security vulnerabilities.
+                    </textarea>
+
+                </div>
+
+                <!-- Notes -->
+
+                <div class="config-card large">
+
+                    <label>
+
+                        Additional Instructions
+
+                    </label>
+
+                    <textarea rows="6">
+Ignore formatting issues.
+
+Focus only on logic and security.
+                    </textarea>
+
+                </div>
+
+                <!-- Depth -->
+
+                <div class="config-card">
+
+                    <label>
+
+                        Analysis Depth
+
+                    </label>
+
+                    <div class="radio-group">
+
+                        <label>
+                            <input type="radio" name="depth">
+                            Quick
+                        </label>
+
+                        <label>
+                            <input type="radio" name="depth" checked>
+                            Standard
+                        </label>
+
+                        <label>
+                            <input type="radio" name="depth">
+                            Deep
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- REVIEW BUTTON -->
+
+            <button class="review-btn">
+
+                <i class="ri-sparkling-2-line"></i>
+
+                Review Code
+
+            </button>
+
+        </section>
+
+    </main>
+
+    <!-- ==========================
+            FOOTER
+    =========================== -->
+
+    <footer>
+
+        <p>
+
+            🔒 100% Offline • Your code never leaves your machine
+
+        </p>
+
+        <p>
+
+            Powered by Ollama + Qwen2.5-Coder
+
+        </p>
+
+        <p>
+
+            v1.0.0
+
+        </p>
+
+    </footer>
+
+</body>
+
 </html>

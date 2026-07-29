@@ -1,0 +1,197 @@
+/* ============================
+        RESET
+============================ */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    background:var(--bg);
+
+    color:var(--text);
+
+    font-family:"Inter",sans-serif;
+
+}
+
+
+/* ============================
+        LINKS
+============================ */
+
+a{
+
+    color:inherit;
+    text-decoration:none;
+
+}
+
+
+/* ============================
+        BUTTONS
+============================ */
+
+button{
+
+    border:none;
+    outline:none;
+
+    cursor:pointer;
+
+    font-family:inherit;
+
+}
+
+
+/* ============================
+        INPUTS
+============================ */
+
+input,
+textarea,
+select{
+
+    font-family:inherit;
+
+    border:none;
+    outline:none;
+
+    color:var(--text);
+
+}
+
+
+/* ============================
+        CONTAINER
+============================ */
+
+.container{
+
+    width:min(95%,var(--container));
+
+    margin:auto;
+
+}
+
+
+/* ============================
+        SELECTION
+============================ */
+
+::selection{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+
+/* ============================
+        SCROLLBAR
+============================ */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#0D1526;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#304463;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#46618E;
+
+}
+
+
+/* ============================
+        HEADINGS
+============================ */
+
+h1{
+
+    font-size:42px;
+
+    font-weight:700;
+
+}
+
+h2{
+
+    font-size:24px;
+
+    font-weight:600;
+
+}
+
+h3{
+
+    font-size:20px;
+
+    font-weight:600;
+
+}
+
+p{
+
+    color:var(--text-muted);
+
+    line-height:1.7;
+
+}
+
+
+/* ============================
+        CARDS
+============================ */
+
+.card{
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+}
+
+
+/* ============================
+        SECTION TITLE
+============================ */
+
+.section-title{
+
+    margin:40px 0 20px;
+
+    color:#7C5CFF;
+
+}

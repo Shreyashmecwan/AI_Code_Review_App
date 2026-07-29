@@ -1,0 +1,121 @@
+/* ===================================
+            HERO SECTION
+=================================== */
+
+.hero{
+
+    text-align:center;
+
+    padding:60px 0 45px;
+
+}
+
+.hero h1{
+
+    font-size:48px;
+
+    font-weight:700;
+
+    color:var(--text);
+
+    margin-bottom:18px;
+
+    letter-spacing:-1px;
+
+}
+
+.hero p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    color:var(--text-muted);
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+
+/* ===================================
+        REVIEW PANEL
+=================================== */
+
+.review-panel{
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    border-radius:22px;
+
+    padding:32px;
+
+    margin-bottom:50px;
+
+    box-shadow:var(--shadow);
+
+}
+
+
+/* ===================================
+            TABS
+=================================== */
+
+.tabs{
+
+    display:flex;
+
+    gap:12px;
+
+    margin-bottom:30px;
+
+}
+
+.tab{
+
+    padding:14px 24px;
+
+    border-radius:14px;
+
+    border:1px solid var(--border);
+
+    background:#172133;
+
+    color:var(--text-light);
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-size:15px;
+
+    transition:var(--transition);
+
+}
+
+.tab i{
+
+    font-size:18px;
+
+}
+
+.tab:hover{
+
+    background:#1E2A42;
+
+}
+
+.tab.active{
+
+    background:var(--gradient);
+
+    color:white;
+
+    border:none;
+
+}

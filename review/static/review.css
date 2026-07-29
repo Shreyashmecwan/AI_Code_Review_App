@@ -1,0 +1,211 @@
+/* ===========================================
+            REVIEW CONFIGURATION
+=========================================== */
+
+.section-title{
+    font-size:2rem;
+    font-weight:700;
+    color:#7c5cff;
+    margin:50px 0 30px;
+}
+
+
+/* ===========================================
+            GRID
+=========================================== */
+
+.config-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:24px;
+}
+
+
+/* ===========================================
+            CARD
+=========================================== */
+
+.config-card{
+    background:#111827;
+    border:1px solid #273244;
+    border-radius:18px;
+    padding:22px;
+    transition:.3s;
+}
+
+.config-card:hover{
+    border-color:#4f7cff;
+    transform:translateY(-3px);
+}
+
+
+/* Large cards */
+
+.config-card.large{
+    grid-column:span 2;
+}
+
+
+/* ===========================================
+            LABEL
+=========================================== */
+
+.config-card>label{
+    display:block;
+    color:#F8FAFC;
+    font-size:15px;
+    font-weight:600;
+    margin-bottom:14px;
+}
+
+
+/* ===========================================
+            SELECT
+=========================================== */
+
+.config-card select{
+    width:100%;
+    padding:14px 18px;
+    background:#0F172A;
+    color:#F8FAFC;
+    border:1px solid #273244;
+    border-radius:12px;
+    font-size:15px;
+    outline:none;
+    transition:.3s;
+}
+
+.config-card select:focus{
+    border-color:#4F7CFF;
+}
+
+
+/* ===========================================
+            TEXTAREA
+=========================================== */
+
+.config-card textarea{
+    width:100%;
+    min-height:140px;
+    resize:vertical;
+    padding:16px;
+    background:#0F172A;
+    color:#CBD5E1;
+    border:1px solid #273244;
+    border-radius:12px;
+    font-size:15px;
+    line-height:1.7;
+    outline:none;
+    transition:.3s;
+}
+
+.config-card textarea:focus{
+    border-color:#4F7CFF;
+}
+
+
+/* ===========================================
+            CHECKBOXES
+=========================================== */
+
+.checkbox-group{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:14px;
+}
+
+.checkbox-group label{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:#CBD5E1;
+    cursor:pointer;
+    font-size:15px;
+}
+
+.checkbox-group input{
+    accent-color:#4F7CFF;
+    width:18px;
+    height:18px;
+}
+
+
+/* ===========================================
+            RADIO
+=========================================== */
+
+.radio-group{
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.radio-group label{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:#CBD5E1;
+    cursor:pointer;
+}
+
+.radio-group input{
+    accent-color:#4F7CFF;
+}
+
+
+/* ===========================================
+            REVIEW BUTTON
+=========================================== */
+
+.review-btn{
+    width:100%;
+    margin-top:35px;
+    padding:18px;
+    border:none;
+    border-radius:16px;
+    background:linear-gradient(135deg,#6D5EF9,#4F7CFF);
+    color:white;
+    font-size:18px;
+    font-weight:600;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.review-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 15px 35px rgba(79,124,255,.35);
+}
+
+.review-btn i{
+    font-size:22px;
+}
+
+
+/* ===========================================
+            RESPONSIVE
+=========================================== */
+
+@media (max-width:900px){
+
+    .config-grid{
+        grid-template-columns:1fr;
+    }
+
+    .config-card.large{
+        grid-column:span 1;
+    }
+
+    .checkbox-group{
+        grid-template-columns:1fr;
+    }
+
+    .radio-group{
+        flex-direction:column;
+        gap:12px;
+    }
+
+}

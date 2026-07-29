@@ -1,0 +1,155 @@
+/* ============================
+        NAVBAR
+============================ */
+
+.navbar{
+
+    height:74px;
+
+    padding:0 32px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    border-bottom:1px solid var(--border);
+
+    background:#0A1323;
+
+}
+
+
+/* Logo */
+
+.logo{
+
+    display:flex;
+
+    gap:18px;
+
+    align-items:center;
+
+}
+
+.logo-icon{
+
+    width:52px;
+
+    height:52px;
+
+    border-radius:14px;
+
+    background:var(--gradient);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:24px;
+
+}
+
+.logo h2{
+
+    font-size:31px;
+
+}
+
+.logo p{
+
+    font-size:15px;
+
+}
+
+.dot{
+
+    width:6px;
+
+    height:6px;
+
+    display:inline-block;
+
+    border-radius:50%;
+
+    background:var(--success);
+
+    margin:0 8px;
+
+}
+
+
+/* Right */
+
+.nav-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+
+/* Status */
+
+.status{
+
+    padding:12px 20px;
+
+    border-radius:12px;
+
+    border:1px solid var(--border);
+
+    background:#101827;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.status-dot{
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:var(--success);
+
+}
+
+
+/* Icons */
+
+.icon-btn{
+
+    width:46px;
+
+    height:46px;
+
+    border-radius:12px;
+
+    background:transparent;
+
+    border:1px solid var(--border);
+
+    color:var(--text);
+
+    transition:var(--transition);
+
+}
+
+.icon-btn:hover{
+
+    background:var(--primary);
+
+}
